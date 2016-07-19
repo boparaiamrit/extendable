@@ -1,5 +1,5 @@
 {
-    "name": "ironshark/laravel-extendable",
+    "name": "boparaiamrit/laravel-extendable",
     "description": "Traits for Laravel to add and manage custom Eloquent model fields.",
     "keywords": ["trait", "laravel", "eloquent", "extendable", "custom fields"],
     "type": "library",
@@ -14,6 +14,10 @@
         {
             "name": "Anton Pauli",
             "email": "pauli@ironshark.de"
+        },
+        {
+          "name": "Amritpal Singh",
+          "email": "boparaiamrit@gmail.com"
         }
     ],
     "autoload": {
