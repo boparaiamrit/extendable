@@ -1,5 +1,5 @@
 {
-    "name": "boparaiamrit/laravel-extendable",
+    "name": "boparaiamrit/extendable",
     "description": "Traits for Laravel to add and manage custom Eloquent model fields.",
     "keywords": ["trait", "laravel", "eloquent", "extendable", "custom fields"],
     "type": "library",
