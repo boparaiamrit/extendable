@@ -1,0 +1,15 @@
+{
+  "accounts": [
+    {
+      "type__c": {
+        "title": "Light",
+        "type": "radio",
+        "options": {
+          "0": "Off",
+          "1": "On"
+        },
+        "default": 1
+      }
+    }
+  ]
+}
