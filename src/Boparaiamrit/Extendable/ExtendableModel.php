@@ -77,7 +77,7 @@ class ExtendableModel extends Model
 	 */
 	public function customFieldNames()
 	{
-		return $this->getFieldNames(get_class($this));
+		return $this->getCustomFieldNames($this->getTable());
 	}
 	
 	/**

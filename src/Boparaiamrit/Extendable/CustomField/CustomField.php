@@ -54,6 +54,39 @@ class CustomField extends Model implements ICustomField
 	}
 	
 	/**
+	 * Return column name for current custom field value
+	 *
+	 * @return string
+	 */
+	public function getAttributeName()
+	{
+		/** @var Model $ModelInstance */
+		$ModelInstance = new $this->parent_type;
+		
+		// Get Table Name
+		$table = $ModelInstance->getTable();
+		
+		$customFields = $this->getCustomFields($table);
+		
+		$type = $customFields[ $this->field_name ][ self::CONFIG_FIELD_TYPE ];
+		
+		switch ($type) {
+			case self::FIELD_CHECKBOX:
+			case self::FIELD_SELECT:
+			case self::FIELD_STRING:
+			case self::FIELD_RADIO:
+				return self::STRING_VALUE;
+			case self::FIELD_TEXT:
+				return self::TEXT_VALUE;
+			case self::FIELD_DATETIME:
+				return self::DATE_VALUE;
+			default:
+				return self::STRING_VALUE;
+		}
+	}
+	
+	
+	/**
 	 * @param $value
 	 *
 	 * @return $this
